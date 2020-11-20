@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Dish } from '../shared/dish';
+import { DishdetailsComponent } from '../dishdetails/dishdetails.component';
 
 const DISHES: Dish[] = [
 {
@@ -50,11 +51,12 @@ const DISHES: Dish[] = [
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss']
 })
+
 export class MenuComponent implements OnInit {
 
   dishes: Dish[] = DISHES;  
 
-  selectedDish = DISHES[0];
+  selectedDish = DishdetailsComponent;
 
   constructor() { }
 
