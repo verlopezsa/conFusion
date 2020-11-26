@@ -11,20 +11,19 @@ import { LeaderService } from '../services/leader.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-
 export class HomeComponent implements OnInit {
-
-  dish : Dish;
+  
+  dish: Dish;
   promotion: Promotion;
-  leader:Leader;
+  leader: Leader;
 
   constructor(private dishService: DishService, 
-  private promotionService: PromotionService, private leaderService:LeaderService) { }
+    private promotionService: PromotionService,
+    private leaderService: LeaderService) { }
 
   ngOnInit() {
     this.dish = this.dishService.getFeaturedDish();
     this.promotion = this.promotionService.getFeaturedPromotion();
     this.leader = this.leaderService.getFeaturedLeader();
   }
-
 }
