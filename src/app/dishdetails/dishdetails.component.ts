@@ -13,7 +13,7 @@ import { switchMap } from 'rxjs/operators';
 export class DishdetailsComponent implements OnInit {
 
   dish: Dish;
-   dishIds: string[];
+  dishIds: string[];
   prev: string;
   next: string;
 
