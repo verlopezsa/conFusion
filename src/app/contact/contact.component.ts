@@ -12,14 +12,13 @@ export class ContactComponent implements OnInit {
 
   feedbackForm: FormGroup;
   feedback: Feedback;
-  contactType = ContactType;
    @ViewChild('fform') feedbackFormDirective;
 
    formErrors = {
     'firstname': '',
     'lastname': '',
     'telnum': '',
-    'email': ''
+    'email': '',
   };
 
   validationMessages = {
