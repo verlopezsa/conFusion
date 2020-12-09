@@ -43,7 +43,7 @@ export class DishdetailsComponent implements OnInit {
   constructor(private dishservice: DishService,
     private route: ActivatedRoute,
     private fb: FormBuilder,
-    @Inject('baseURL') private baseURL,
+    @Inject('BaseURL') private BaseURL,
     private location: Location) { }
 
   ngOnInit() {

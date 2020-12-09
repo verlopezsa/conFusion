@@ -5,6 +5,7 @@ import { Observable, of } from 'rxjs';
 import { delay } from 'rxjs/operators';
 import { map } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
 import { baseURL } from '../shared/baseurl';
 
 @Injectable({
