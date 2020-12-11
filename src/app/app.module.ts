@@ -20,6 +20,7 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms'; 
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 
@@ -75,6 +76,7 @@ import { HighlightDirective } from './directives/highlight.directive';
     FormsModule,
     HttpClientModule,
     HttpModule,
+    BrowserAnimationsModule,
     ReactiveFormsModule 
     
   ],
